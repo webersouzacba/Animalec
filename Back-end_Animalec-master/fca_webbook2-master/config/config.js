@@ -1,6 +1,6 @@
 module.exports = {
     mongodb: {
-        uri: 'mongodb+srv://fcabook:fT73qsfEjZ7C@fcabook-jly7a.mongodb.net/pwa_teste?retryWrites=true&w=majority',
+        uri: 'mongodb://localhost:27017/test?retryWrites=true&w=majority',
         collections: {
             animal: 'animals',
             question: 'questions',
