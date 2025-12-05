@@ -1,7 +1,5 @@
 const Animal = require('../models/animal.model');
-const {
-    validationResult
-} = require('express-validator');
+const { validationResult } = require('express-validator');
 const AnimalMessages = require("../messages/animal.messages");
 
 exports.get = (req, res) => {

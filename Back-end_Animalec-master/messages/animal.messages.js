@@ -1,10 +1,6 @@
 module.exports = {
     success: {
-        s0: {
-            code: "AnimalCreated",
-            http: 201,
-            type: "success"
-        },
+        s0: { code: "AnimalCreated", http: 201, type: "success"},
         s1: {
             http: 200,
             code: "AnimalUpdated",

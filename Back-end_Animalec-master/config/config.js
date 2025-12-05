@@ -6,7 +6,12 @@ module.exports = {
             question: 'questions',
             quiz: 'quizzes',
             user: 'users',
-            user_levels: "user_levels"
+            user_levels: "user_levels",
+
+            // Novas entidades
+            especialista: 'especialistas',
+            patrocinador: 'patrocinadores',
+            nivel_patrocinio: 'niveis_patrocinio'
         }
     },
     auth: {

@@ -13,4 +13,4 @@ start "Animalec Backend" cmd /k ^
 
 REM ---- FRONT-END ----
 start "Animalec Frontend" cmd /k ^
-"cd /d \"%BASE%Front-end_Animalec-master\" ^&^& nvm use 16.20.2 ^&^& npm run serve"
+"cd /d \"%BASE%Front-end_Animalec-master\" ^&^& nvm use 16.20.2 ^&^& npm run serve

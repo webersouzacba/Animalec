@@ -26,6 +26,7 @@ const state = {
 
 // getters
 const getters = {
+  token: state => state.token,    
   isUserLoggedIn: state => state.token != "",
   getProfileName: state => state.profile.name,
   getUserType: state => state.profile.type,

@@ -9,4 +9,8 @@ module.exports = (app) => {
     app.use('/users', require('../routes/user.routes'));
     app.use('/emails', require('../routes/email.routes'));
     
+    // Novas rotas para novas emtidades
+    app.use('/especialistas', require('../routes/especialista.routes'));
+    app.use('/patrocinadores', require('../routes/patrocinador.routes'));
+    app.use('/niveisPatrocinio', require('../routes/niveisPatrocinio.routes'));
 }

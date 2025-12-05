@@ -108,7 +108,6 @@ const routes = [
       rule: "user"
     }
   },
-  
   {
     path: "/quizzes",
     name: "quizzes",
@@ -141,7 +140,37 @@ const routes = [
       rule: "user"
     }
   },
-  // Redirect to 404 page, if no match found
+  {
+    path: "/admin/experts",
+    name: "listExperts",
+    component: () => import("@/views/experts/ListExperts.vue")
+  },
+  {
+    path: "/admin/experts/add",
+    name: "addExpert",
+    component: () => import("@/views/experts/AddExpert.vue")
+  },
+  {
+    path: "/admin/experts/:expertId",
+    name: "editExpert",
+    component: () => import("@/views/experts/EditExpert.vue")
+  },
+  {
+    path: "/admin/sponsors",
+    name: "listSponsors",
+    component: () => import("@/views/sponsors/ListSponsors.vue")
+  },
+  {
+    path: "/admin/sponsors/add",
+    name: "addSponsor",
+    component: () => import("@/views/sponsors/AddSponsor.vue")
+  },
+  {
+    path: "/admin/sponsors/:sponsorId",
+    name: "editSponsor",
+    component: () => import("@/views/sponsors/EditSponsor.vue")
+  },
+  // Redirect to 404 page, if no match found (sempre por último)
   {
     path: "*",
     component: () => import("@/views/Error404.vue")
