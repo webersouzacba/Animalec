@@ -28,9 +28,9 @@ O projeto é baseado no caso de estudo **Animalec** do livro:
 
 O objetivo principal é **evoluir o protótipo estático** (HTML5/CSS) da Tarefa 3.1b para uma **aplicação web full stack**, com:
 
-- **Front-end dinâmico** em Vue.js (SPA)  
-- **Back-end REST** em Node.js/Express  
-- **Persistência de dados** em MongoDB  
+- **Front-end dinâmico** em Vue.js (SPA);  
+- **Back-end REST** em Node.js/Express;  
+- **Persistência de dados** em MongoDB;  
 - **Autenticação e área de administração** para gestão das entidades do Animalec.
 
 Além das entidades já presentes no projeto do livro, o miniprojeto estende a área de administração com:
@@ -52,8 +52,8 @@ A Tarefa 3.1b produziu:
 
 para as páginas de:
 
-- Listagem, criação e edição de **Patrocinadores**  
-- Listagem, criação e edição de **Especialistas**  
+- Listagem, criação e edição de **Patrocinadores**;  
+- Listagem, criação e edição de **Especialistas**.
 
 Na Tarefa 3.2 e 3.3, estes artefatos foram usados como **guia direto** para:
 
@@ -68,5 +68,14 @@ Na Tarefa 3.2 e 3.3, estes artefatos foram usados como **guia direto** para:
 
 ```txt
 Animalec/
-├── Back-end_Animalec-master/   # API REST em Node.js / Express / MongoDB
-└── Front-end_Animalec-master/  # SPA em Vue.js (área pública + administração)
+├── Back-end_Animalec-master/     # API REST em Node.js / Express / MongoDB
+├── Front-end_Animalec-master/    # SPA em Vue.js (área pública + administração)
+└── database/
+    └── test/                     # Dump MongoDB (mongodump) da base 'test'
+        ├── animals.bson.gz
+        ├── animals.metadata.json.gz
+        ├── especialistas.bson.gz
+        ├── especialistas.metadata.json.gz
+        ├── patrocionadores.bson.gz
+        ├── ...
+        └── users.bson.gz
